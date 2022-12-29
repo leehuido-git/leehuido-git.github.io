@@ -801,8 +801,9 @@ $sidebar-display: "sidebar-display";
       }
     }
 
-    &:not(.active) .sidebar_effect{
-      background: linear-gradient(var(--sidebar-active-color), var(--sidebar-active-color)) right no-repeat, var(--blockquote-text-color);
+    &:not(.active), .sidebar_effect {
+      background: 
+      linear-gradient(var(--sidebar-active-color), var(--sidebar-active-color)) right no-repeat, var(--blockquote-text-color);
       background-size:0% 100%;
       display: inline-block;
       background-clip: text;
@@ -811,8 +812,8 @@ $sidebar-display: "sidebar-display";
       -webkit-text-fill-color: transparent;
       transition: 0.6s;
     }
-    
-    &:not(.active) .sidebar_effect:hover{
+
+    &:not(.active), .sidebar_effect:hover {
       background-size: 100% 100%;
     }
   }
