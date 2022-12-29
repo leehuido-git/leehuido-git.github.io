@@ -37,8 +37,120 @@ layout: page
     {% assign posts = posts | push: default[i] %}
   {% endfor %}
 {% endif %}
-
 <div id="post-list">
+  {% if default_beg < 1 %}
+  <link rel="stylesheet" href="assets/css/main-head-slides.css">
+  <!--image slider start-->
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="assets/img/main-slides/1.jpg" alt="1.jpg"/>
+      </div>
+      <div class="slide">
+        <img src="assets/img/main-slides/2.gif" alt="2.gif"/>
+      </div>
+      <div class="slide">
+        <img src="assets/img/main-slides/3.gif" alt="3.gif"/>
+      </div>
+      <div class="slide">
+        <img src="assets/img/main-slides/4.jpg" alt="4.jpg"/>
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+  </div>
+  <!--image slider end-->
+
+  <script type="text/javascript">
+    var counter = 1;
+    sliding();
+    setInterval(sliding, 4000);
+    function sliding(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }
+  </script>
+  <div id="main_image">
+    <link rel="stylesheet" href="assets/css/main-head-style.css">
+    <div style="float: left; position: absolute; left: 30%;">
+      <h1 id="typing_anime">안녕 세계!</h1>
+      <h1 id="typewriter_front"></h1>
+      <h1 id="typewriter_middle" style="color: RED;"></h1>
+      <h1 style="font-size: 30px; display: inline; font-family: Consolas;"><span id="typewriter_back"></span><span id="cursor">|</span></h1>    
+    </div>  
+  </div>
+
+  <script>
+    function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+    const phrases = [
+         ['#include <iostream>\nusing namespace std;\n\nint main() {\nㅤㅤㅤㅤcout << "', '";\nㅤㅤㅤㅤreturn 0;\n}']
+        ,['#include <stdio.h>\n\nint main() {\nㅤㅤㅤㅤprintf("', '");\nㅤㅤㅤㅤreturn 0;\n}']
+        ,['print("', '")']];
+    const _print = "hELLO wORLD!";
+    const el = [document.getElementById("typewriter_front"), document.getElementById("typewriter_middle"), document.getElementById("typewriter_back")];
+  
+    let sleepTime = 50;
+    let curPhraseIndex = 0;
+  
+    const writeLoop = async () => {
+      while(true){
+        let curWord = [phrases[curPhraseIndex][0], _print, phrases[curPhraseIndex][1]];
+        for(let j=0; j<3; j++)
+        {
+            for (let i=0; i<curWord[j].length; i++){
+                el[j].innerText = curWord[j].substring(0, i+1);
+                  await sleep(sleepTime)
+            }
+        }
+        await sleep(sleepTime * 15);
+
+        for(let j=2; j>-1; j--)
+        {
+            for (let i=curWord[j].length+1; i>0; i--){
+                el[j].innerText = curWord[j].substring(0, i-1);
+                  await sleep(sleepTime)
+            }
+        }
+        await sleep(sleepTime * 2);
+  
+        if(curPhraseIndex === phrases.length -1){
+          curPhraseIndex = 0;
+          }
+        else{
+          curPhraseIndex++;
+          }
+        }
+      };
+      writeLoop();
+  </script>
+  {% endif %}
 
 {% for post in posts %}
 

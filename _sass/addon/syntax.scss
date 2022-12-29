@@ -29,10 +29,16 @@ html {
   }
 }
 
-/* -- code snippets -- */
+/* -- Codes Snippet -- */
+
+$code-radius: 6px;
 
 %code-snippet-bg {
   background: var(--highlight-bg-color);
+}
+
+%code-snippet-radius {
+  border-radius: $code-radius;
 }
 
 %code-snippet-padding {
@@ -42,7 +48,7 @@ html {
 
 .highlighter-rouge {
   @extend %code-snippet-bg;
-  @extend %rounded;
+  @extend %code-snippet-radius;
 
   color: var(--highlighter-rouge-color);
   margin-top: 0.5rem;
@@ -50,7 +56,7 @@ html {
 }
 
 .highlight {
-  @extend %rounded;
+  @extend %code-snippet-radius;
   @extend %code-snippet-bg;
 
   @at-root figure#{&} {
@@ -167,6 +173,8 @@ div {
 
   $code-header-height: 2.25rem;
 
+  border-top-left-radius: $code-radius;
+  border-top-right-radius: $code-radius;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,9 +226,9 @@ div {
   /* clipboard */
   button {
     @extend %cursor-pointer;
-    @extend %rounded;
 
     border: 1px solid transparent;
+    border-radius: $code-radius;
     height: $code-header-height;
     width: $code-header-height;
     padding: 0;
