@@ -1618,7 +1618,7 @@ $sidebar-display: "sidebar-display";
 
   #core-wrapper,
   #tail-wrapper {
-    padding-right: 0rem !important;
+    padding-right: 4.5rem !important;
   }
 
   #back-to-top {
@@ -1718,7 +1718,6 @@ $sidebar-display: "sidebar-display";
       }
 
       i {
-//        background-color: var(--sidebar-btn-bg);
         font-size: 1.5rem;
         width: $icon-block-size;
         height: $icon-block-size;

@@ -28,14 +28,10 @@
   --checkbox-checked-color: var(--link-color);
 
   /* Sidebar */
-//  --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
   --sidebar-img: url("/assets/img/sidebar/night_sky.jpg");
-//  --sidebar-muted-color: #6d6c6b;
-  --sidebar-muted-color: red;
-//  --sidebar-active-color: rgb(255, 255, 255, 0.8);
-  --sidebar-active-color:red;
-//  --nav-cursor-color: rgb(183, 182, 182);
-  --nav-cursor-color: red;
+  --sidebar-muted-color: #FF0000;
+  --sidebar-active-color: #FF0000;
+  --nav-cursor-color: #FF0000;
   --sidebar-btn-bg: rgb(117, 116, 116, 0.2);
 
   /* Topbar */
