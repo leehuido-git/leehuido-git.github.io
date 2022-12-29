@@ -16,7 +16,7 @@
               {{ site.avatar | relative_url }}
             {% endif %}
           {% endcapture %}
-          <img src="{{ avatar_url | strip }}" alt="avatar" onerror="this.style.display='none'">
+          <img src='/assets/img/main_img.png' alt="avatar" onerror="this.style.display='none'">
         {% endif %}
       </a>
     </div>
@@ -33,18 +33,18 @@
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
-        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ site.data.locales[site.lang].tabs.home | upcase }}</span>
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded sidebar_effect"></i>
+        <div style="display:inline-block;">{{ site.data.locales[site.lang].tabs.home | upcase }}</div>
       </a>
     </li>
     <!-- the real tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
       <a href="{{ tab.url | relative_url }}" class="nav-link">
-        <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
+        <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded sidebar_effect"></i>
         {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-        <span>{{ site.data.locales[site.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+        <div class="sidebar_effect" style="display:inline-block;">{{ site.data.locales[site.lang].tabs.[tab_name] | default: tab.title | upcase }}</div>
       </a>
     </li> <!-- .nav-item -->
     {% endfor %}
@@ -81,17 +81,7 @@
 
       {% if url %}
       <a href="{{ url }}" aria-label="{{ entry.type }}"
-        {% assign link_types = nil %}
-        {% unless entry.noblank %}
-          {% assign link_types = link_types | append: " noopener" %}
-          target="_blank"
-        {% endunless %}
-
-        {% if entry.type == 'mastodon' %}
-          {% assign link_types = link_types | append: " me" %}
-        {% endif %}
-
-        {% if link_types %}rel="{{ link_types | lstrip }}"{% endif %}>
+        {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
         <i class="{{ entry.icon }}"></i>
       </a>
       {% endif %}
