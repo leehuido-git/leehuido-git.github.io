@@ -805,15 +805,17 @@ $sidebar-display: "sidebar-display";
     }
     &:not(.active) > a{
       background: 
-      linear-gradient(var(--sidebar-active-color), var(--sidebar-active-color)) right no-repeat, var(--blockquote-text-color);
-      background-size:0% 100%;
+      linear-gradient(var(--sidebar-active-color), var(--sidebar-active-color)) 
+      right no-repeat var(--blockquote-text-color);
+      background-size: 0% 100%;
       background-clip: text;
       color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 0.6s;
     }
-    &:not(.active) > a:hover{
+
+    &:not(.active) > a:hover {
       background-size: 100% 100%;
     }
   }
@@ -832,7 +834,7 @@ $sidebar-display: "sidebar-display";
           left: calc($cursor-width / 2);
           width: 100%;
         }
-        
+
         &::after {/* the cursor */
           display: table;
           visibility: hidden;
@@ -1160,7 +1162,6 @@ $sidebar-display: "sidebar-display";
 #panel-wrapper {
   margin-top: $topbar-height; /* same as the height of topbar */
 }
-
 
 #topbar-wrapper.row,
 #main > .row,
