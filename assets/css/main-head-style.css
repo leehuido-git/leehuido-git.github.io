@@ -21,15 +21,14 @@
   color: transparent;
 }
 body #typing_anime{
-  height: 14vh;
+  font-size:10vh;
+  height: 12vh;
   padding: 0px 75px;
 }
 #typewriter_front, #typewriter_middle, #typewriter_back{
   text-align: left;
   display: inline; 
-  font-size: 30px;
   font-weight: bold;
-  height: 2vh;
   font-family: Consolas;
 }
 #cursor{
