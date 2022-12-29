@@ -141,6 +141,7 @@ blockquote {
     @extend %rounded;
 
     &::before {
+      font-family: "Font Awesome 5 Free";
       text-align: center;
       width: 1.25rem;
       margin-right: 0.75rem;
@@ -159,7 +160,7 @@ blockquote {
     }
   }
 
-  @include prompt("tip", "\f0eb", "regular");
+  @include prompt("tip", "\f0eb", 400);
   @include prompt("info", "\f06a");
   @include prompt("warning", "\f06a");
   @include prompt("danger", "\f071");
@@ -231,7 +232,7 @@ i { /* fontawesome icons */
 .access {
   top: 2rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 8rem;
 
   &:only-child {
@@ -704,8 +705,10 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
-
+//  background: var(--sidebar-bg);
+  background-image: var(--sidebar-img);
+  background-size: cover;
+  background-repeat: no-repeat;
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -800,20 +803,17 @@ $sidebar-display: "sidebar-display";
         color: var(--sidebar-active-color);
       }
     }
-
-    &:not(.active), .sidebar_effect {
+    &:not(.active) > a{
       background: 
       linear-gradient(var(--sidebar-active-color), var(--sidebar-active-color)) right no-repeat, var(--blockquote-text-color);
       background-size:0% 100%;
-      display: inline-block;
       background-clip: text;
       color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 0.6s;
     }
-
-    &:not(.active), .sidebar_effect:hover {
+    &:not(.active) > a:hover{
       background-size: 100% 100%;
     }
   }
@@ -832,8 +832,8 @@ $sidebar-display: "sidebar-display";
           left: calc($cursor-width / 2);
           width: 100%;
         }
-
-        &::after { /* the cursor */
+        
+        &::after {/* the cursor */
           display: table;
           visibility: hidden;
           content: "";
@@ -1161,6 +1161,7 @@ $sidebar-display: "sidebar-display";
   margin-top: $topbar-height; /* same as the height of topbar */
 }
 
+
 #topbar-wrapper.row,
 #main > .row,
 #search-result-wrapper > .row {
@@ -1268,7 +1269,6 @@ $sidebar-display: "sidebar-display";
 
     div.d-flex {
       padding: 1.5rem 0;
-      line-height: 1.65;
       flex-wrap: wrap;
       justify-content: space-around !important;
     }
@@ -1630,7 +1630,7 @@ $sidebar-display: "sidebar-display";
 
   #core-wrapper,
   #tail-wrapper {
-    padding-right: 4.5rem !important;
+    padding-right: 1rem !important;
   }
 
   #back-to-top {
