@@ -35,6 +35,9 @@ github:
 #twitter:
 #  username: twitter_username            # change to your twitter username
 
+who_am_i:
+  url: https://www.notion.so/LEEHUIDO-562784845e024dad8818bdea109f3cd3
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer

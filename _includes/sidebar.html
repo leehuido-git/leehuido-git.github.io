@@ -74,6 +74,10 @@
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
         {%- elsif entry.type == 'rss' -%}
           {{ "/feed.xml" | relative_url }}
+        {%- elsif entry.type == 'who_am_i' -%}
+          https://www.notion.so/LEEHUIDO-562784845e024dad8818bdea109f3cd3
+        {%- elsif entry.type == 'slack' -%}
+          https://slack.com/intl/ko-kr/
         {%- else -%}
           {{ entry.url }}
         {%- endif -%}

@@ -11,10 +11,11 @@
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
 -
-  type: rss
-  icon: 'fas fa-rss'
-  noblank: true
-
+  type: who_am_i
+  icon: 'fa-solid fa-person-dress'
+-
+  type: slack
+  icon: 'fa-brands fa-slack'
 # Uncomment and complete the url below to enable more contact options
 # -
 #   type: mastodon
