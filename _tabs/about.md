@@ -8,7 +8,7 @@ order: 4
 ---
 <div style="clear: both;">
   <div style="float: left; margin-right 1em;">
-    <img src="../assets/img/about_img/profile_image.jpg" width="90%" height="100%">
+    <img src="/assets/img/about_img/profile_image.jpg" width="90%" height="100%">
   </div>
   <div>
     <span style="color:orange; font-size:1.5rem; display : block;">Name.</span>

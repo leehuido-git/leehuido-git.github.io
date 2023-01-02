@@ -35,9 +35,6 @@ github:
 #twitter:
 #  username: twitter_username            # change to your twitter username
 
-who_am_i:
-  url: https://www.notion.so/LEEHUIDO-562784845e024dad8818bdea109f3cd3
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -81,7 +78,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://chirpy-img.netlify.app'
+img_cdn: 'https://cdn.jsdelivr.net/gh/leehuido-git/leehuido-git.github.io@main'
 
 # the avatar on sidebar, support local or CORS resources
 avatar: '/assets/img/main_img.png'
