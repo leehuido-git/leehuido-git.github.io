@@ -57,8 +57,8 @@ order: 4
       <span style="font-size:1.2rem;">Atmel Studio, Autodesk Inventor</span>
       <span style="color:orange; font-size:1.5rem; display : block;">작품 내용.</span>
       <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- LCD(GLCD 128X64) 사용<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-Pong 알고리즘 개발<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-죽을 때마다 카운트 증가</span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- Pong 알고리즘 개발<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 죽을 때마다 카운트 증가</span>
       <span style="color:orange; font-size:1.5rem; display : block;">Detail.</span>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <A href="https://github.com/leehuido-git/DynamixelControlLH" style="font-size:1.2rem; font-weight:bold">추가 예정</A>
@@ -79,8 +79,8 @@ order: 4
       <span style="font-size:1.2rem;">Tensorflow, Open-CV, Numpy..</span>
       <span style="color:orange; font-size:1.5rem; display : block;">작품 내용.</span>
       <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 스마트폰 카메라로 미숙아의 망막 촬영<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-사진 전처리(Gaussian Blur, ROI, Resize..)<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-Xception model를 통해 Classification</span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 사진 전처리(Gaussian Blur, ROI, Resize..)<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- Xception model를 통해 Classification</span>
       <span style="color:orange; font-size:1.5rem; display : block;">Detail.</span>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <A href="http://ki-it.com/_PR/view/?aidx=21355&bidx=1925#!po=58.3333" style="font-size:1.2rem; font-weight:bold">논문</A>
@@ -100,8 +100,8 @@ order: 4
       <span style="color:orange; font-size:1.5rem; display : block;">발표 날.</span>
       <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;2018.03.28</span>
       <span style="color:orange; font-size:1.5rem; display : block;">세미나 내용.</span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-다이오드 특징 및 관련 회로<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-트랜지스터 종류 및 각각의 특징<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 다이오드 특징 및 관련 회로<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 트랜지스터 종류 및 각각의 특징<br></span>
       <span style="color:orange; font-size:1.5rem; display : block;">Detail.</span>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <A href="/assets/files/TR_seminar/6.Diode_TR.pdf" style="font-size:1.2rem; font-weight:bold">세미나 자료</A>
@@ -123,9 +123,9 @@ order: 4
       <span style="font-size:1.2rem; font-weight:bold;">&nbsp; &nbsp; &nbsp; &nbsp;Tool: </span>
       <span style="font-size:1.2rem;">Atmel Studio, Autodesk Inventor, OrCAD</span>
       <span style="color:orange; font-size:1.5rem; display : block;">작품 내용.</span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-AX-12A 모터 12개 RS-232통신을 이용해 다중 동시 제어<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-RS-232통신을 이용해 블루투스 모듈과 통신<br></span>
-      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;-레귤레이터를 통해 원하는 전압으로 변경(5V, 3.3V)</span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- AX-12A 모터 12개 RS-232통신을 이용해 다중 동시 제어<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- RS-232통신을 이용해 블루투스 모듈과 통신<br></span>
+      <span style="font-size:1.2rem;">&nbsp; &nbsp; &nbsp; &nbsp;- 레귤레이터를 통해 원하는 전압으로 변경(5V, 3.3V)</span>
       <span style="color:orange; font-size:1.5rem; display : block;">Detail.</span>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <A href="https://github.com/leehuido-git/DynamixelControlLH" style="font-size:1.2rem; font-weight:bold">GITHUB_DynamixelControlLH</A>
